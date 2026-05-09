@@ -1,4 +1,4 @@
-const CACHE = 'spnd-v1';
+const CACHE = 'spnd-v3';
 const ASSETS = ['/spnd/', '/spnd/index.html', '/spnd/manifest.json', '/spnd/icon-192.png', '/spnd/icon-512.png'];
 
 self.addEventListener('install', e => {
@@ -15,6 +15,6 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('/index.html')))
+    caches.match(e.request).then(cached => cached || fetch(e.request).catch(() => caches.match('/spnd/index.html')))
   );
 });

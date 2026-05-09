@@ -1,7 +1,7 @@
 {
   "name": "Spnd",
   "short_name": "Spnd",
-  "description": "Track your monthly budget and expenses",
+  "description": "Personal budget tracker",
   "start_url": "/spnd/",
   "scope": "/spnd/",
   "display": "standalone",
